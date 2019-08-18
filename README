@@ -1,0 +1,28 @@
+This program is for assigning random nonreciprocal partners to groups of people where each individual is only allowed to be partnered outside thier group.
+
+group 1         group 2
+
+person 1        person 3
+person 2        person 4
+
+
+Person 1 & 2 cannot be paired because they are in the same group.  Likewise person 3 & 4 cannot be paired in either direction.
+
+A valid pairing might be a single path:
+
+person 1  ->  person 3  ->  person 2  ->  person 4  ->  person 1 
+
+
+A pairing may contain cycles so the following pairings are also valid:
+
+
+person 1  ->  person 3  ->  person 1
+person 2  ->  person 4  ->  person 2 
+
+ie:
+
+group 1         group 2
+
+person 1  <-->  person 3
+person 2  <-->  person 4
+
