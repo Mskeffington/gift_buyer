@@ -11,10 +11,11 @@ Person 1 & 2 cannot be paired because they are in the same group.  Likewise pers
 A valid pairing might be a single path:
 
 person 1  ->  person 3  ->  person 2  ->  person 4  ->  person 1 
+or
+person 1  ->  person 4  ->  person 2  ->  person 3  ->  person 1 
 
 
 A pairing may contain cycles so the following pairings are also valid:
-
 
 person 1  ->  person 3  ->  person 1
 person 2  ->  person 4  ->  person 2 
