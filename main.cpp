@@ -57,7 +57,7 @@ map<string, string> createPairs(const vector<shared_ptr<Person>>& constpeople) {
         sort(people.begin(), people.end(), compare_remaining_buyers());
         auto person = people.at(0);
         
-        // if any person has 0 partner options, we fucked up
+        // if any person has 0 partner options, return error
         if (person->eligableBuyers.empty()) {
             cerr << "Error at " << person->name << endl;
             return pairings;
